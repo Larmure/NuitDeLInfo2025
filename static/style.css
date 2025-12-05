@@ -1,0 +1,49 @@
+/* --- STYLE DU BOUTON FLOTTANT --- */
+#menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 9999;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 5px 12px;
+    font-size: 1.5rem;
+    line-height: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#menu-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Quand le menu est fermé (fond blanc), le bouton devient gris */
+#menu-toggle.dark-mode {
+    color: #333;
+    border-color: #333;
+}
+
+/* --- STYLE DU MENU --- */
+.sidebar {
+    min-height: 100vh;
+    padding-top: 70px;
+    transition: margin 0.3s;
+}
+
+/* === EFFET DE SURVOL (HOVER) === */
+.sidebar .nav-link {
+    transition: all 0.2s;
+}
+
+.sidebar .nav-link:hover {
+    text-decoration: underline !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* FORCE LE MASQUAGE DU MENU */
+.menu-hidden {
+    display: none !important;
+}
